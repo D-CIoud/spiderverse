@@ -10,4 +10,10 @@ describe("Unit Tests for Spider-Man Class", () => {
     expect(andrewGarfield.nummovies).toBe(2)
     expect(andrewGarfield.production).toBe("Sony Pictures")
   });
+
+  test("2) Use the method GetInfo", () => {
+    //Instanciamos un objeto de la clase Spider-Man y lo cargamos con datos
+    const tomHolland = new spiderman("Spider-Man Marvel",25,"Tom Holland",5,"Marvel Studios")
+    expect(tomHolland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel Studios.")
+  });
 });
